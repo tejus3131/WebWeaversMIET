@@ -1,7 +1,7 @@
 import React from 'react';
 import Image from 'next/image';
 import mukesh from '../images/Muskesh-sir.jpg';
-import swati from '../images/swati-mam.jpg';
+import swati from '../images/swati.jpg';
 
 const Contact = () => {
   return (
