@@ -6,7 +6,7 @@ import swati from '../images/swati-mam.jpg';
 const Contact = () => {
   return (
     <>
-      <h2 className="text-3xl mt-10 font-light text-blue-400 mb-6 text-center">"Introducing Our Faculty Coordinator!" 🌟</h2>
+      <h2 className="text-3xl mt-10 font-light text-blue-400 mb-6 text-center">&quot;Introducing Our Faculty Coordinator!&quot; 🌟</h2>
       <div className='flex flex-col md:flex-row justify-center items-center md:space-y-0 md:space-x-6'>
         
         {/* Profile card for Dr. (Prof.) Mukesh Rawat */}

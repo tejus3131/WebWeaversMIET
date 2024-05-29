@@ -23,6 +23,7 @@ import ananya from '../images/ananya.jpg'
 import rishika from '../images/Rishika.jpg'
 import abhishek from '../images/abhishek.jpg'
 import Contact from '@/Components/Contact';
+import Foot from '@/Components/Foot';
 const teamMembers = [
   { src: nirdesh, name: 'Nirdesh Sharma', role: 'Lead' },
   { src: abhishek, name: 'Abhishek Panwar', role: 'Secretary'},
@@ -87,7 +88,10 @@ export default function Home() {
     <div className="">
     {/* <Herosection/> */}
     <main className="flex min-h-screen flex-col items-center justify-between p-4 md:p-20">
-      <div className="z-10 w-full  max-w-4xl items-center justify-between font-mono text-sm lg:flex">
+      <motion.div className="z-10 w-full  max-w-4xl items-center justify-between font-mono text-sm lg:flex"
+       initial={{ opacity: 0, y: -100 }}
+       animate={{ opacity: 1, y: 0 }}
+       transition={{ delay:1.5, duration: 1 }}>
         {/* Content */}
         <Image
                   className="w-32 h-32 rounded-full mx-auto mb-4"
@@ -98,9 +102,9 @@ export default function Home() {
                   height={250}
                 />
                 
-      </div>
+      </motion.div>
 
-      {/* <motion.img
+      {/* <motion.Image alt=""
         src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
         alt="JavaScript Logo"
         initial={{ x: 130, y: -1000 }}
@@ -228,7 +232,7 @@ export default function Home() {
               </span>
             </h2>
             <p className="m-0 max-w-[30ch] text-balance text-sm opacity-50">
-            "Have questions or inquiries? Reach out to us!"
+            &quot;Have questions or inquiries? Reach out to us!&quot;
             </p>
           </motion.a>
         </div>
@@ -254,7 +258,7 @@ export default function Home() {
         <h1 className="text-xl  font-bold">🚪 Welcome and Registration</h1>
         <h2 className='ml-6'>📋  Attendees arrive and check-in for the event. They receive event materials and are welcomed by the organizers.</h2>
       </div>
-     <img src=''/>
+     <Image alt="" src=''/>
     </div>
     {/* Card 2 */}
     <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-pink-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
@@ -268,7 +272,7 @@ export default function Home() {
         <h1 className="text-xl font-bold">🎉 Ceremony</h1>
         <h2 className='ml-6'>        Opening ceremony for the event.</h2>
       </div>
-     <img src=''/>
+     <Image alt="" src=''/>
     </div>
     {/* Card 3 */}
     <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-green-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
@@ -282,7 +286,7 @@ export default function Home() {
         <h1 className="text-xl font-bold">📚 Session: Next.js Introduction and Advanced Techniques</h1>
         <h3 className='ml-6'>🚀  Learn advanced techniques and best practices in Next.js development.</h3>
       </div>
-     <img src=''/>
+     <Image alt="" src=''/>
     </div>
     {/* Card 4 */}
     <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-purple-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
@@ -296,7 +300,7 @@ export default function Home() {
         <h1 className="text-xl font-bold">🍽️ Lunch</h1>
         <h3 className='ml-6'> Break for lunch.</h3>
       </div>
-     <img src=''/>
+     <Image alt="" src=''/>
     </div>
     {/* Card 5 */}
     <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-yellow-600 text-white rounded mb-10 flex-col md:flex-row">
@@ -310,7 +314,7 @@ export default function Home() {
         <h1 className="text-xl font-bold">🧠 Quiz: Next.js Trivia</h1>
         <h3 className='ml-6'>🤔  Test your knowledge on Next.js with a fun quiz.</h3>
       </div>
-     <img src=''/>
+     <Image alt="" src=''/>
     </div>
     <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-blue-700 text-white rounded mb-10 flex-col md:flex-row">
       {/* Dot Follwing the Left Vertical Line */}
@@ -323,7 +327,7 @@ export default function Home() {
         <h1 className="text-xl font-bold">💻Deployment Workshop</h1>
         <h3 className='ml-6'>🛠️  Practical workshops on deploying Next.js applications.</h3>
       </div>
-     <img src=''/>
+     <Image alt="" src=''/>
     </div>
     <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-red-600 text-white rounded mb-10 flex-col md:flex-row">
       {/* Dot Follwing the Left Vertical Line */}
@@ -336,7 +340,7 @@ export default function Home() {
         <h1 className="text-xl font-bold">🏆 Award Ceremony</h1>
         <h3 className='ml-6'> Recognizing achievements and distributing awards.</h3>
       </div>
-     <img src=''/>
+     <Image alt="" src=''/>
     </div>
     
   </div>
@@ -371,13 +375,13 @@ export default function Home() {
            WebWeavers
           </h3>
           <p className="text-lg font-light leading-relaxed mt-4 mb-4 text-blueGray-600">
-          Welcome to WebWeavers, the ultimate destination for web enthusiasts! Whether you're a seasoned developer or just starting your journey in the world of web development, we've got you covered. Join us as we explore the latest trends, share knowledge, and collaborate on exciting projects. Let's weave the web together!
+          Welcome to WebWeavers, the ultimate destination for web enthusiasts! Whether you&apos;re a seasoned developer or just starting your journey in the world of web development, we&apos;ve got you covered. Join us as we explore the latest trends, share knowledge, and collaborate on exciting projects. Let&apos;s weave the web together!
           </p>
          
         </div>
         <div className="w-full md:w-4/12 px-4 mr-auto ml-auto">
           <div className="relative flex flex-col min-w-0 break-words bg-blue-600 w-full mb-2 shadow-lg rounded-lg ">
-            <img alt="..." src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80" className="w-full align-middle rounded-t-lg" />
+            <Image alt="" src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-1.2.1&amp;ixid=eyJhcHBfaWQiOjEyMDd9&amp;auto=format&amp;fit=crop&amp;w=1051&amp;q=80" className="w-full align-middle rounded-t-lg"  width={1000} height={1000} />
             <blockquote className="relative p-8 mb-4">
               <svg preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 583 95" className="absolute left-0 w-full block h-95-px -top-94-px">
               </svg>
@@ -386,7 +390,7 @@ export default function Home() {
               Empowering the Web Community! 🌐
               </h4>
               <p className="text-md font-light mt-2 text-white">
-              "Fostering innovation, collaboration, and growth in web development through shared knowledge and hands-on experience. Join us in shaping the digital future!" 🌐✨
+              &quot;Fostering innovation, collaboration, and growth in web development through shared knowledge and hands-on experience. Join us in shaping the digital future!&quot; 🌐✨
               </p>
             </blockquote>
           </div>
@@ -418,9 +422,9 @@ export default function Home() {
         >
           {teamMembers.map((member, index) => (
             <div key={index} className="team-member flex-shrink-0 w-full sm:w-1/3 p-4">
-              <div className="bg-gray-200 rounded-lg p-6 shadow-lg text-center">
+              <div className="bg-gray-200 rounded-lg p-6 shadow-lg text-center overflow-hidden">
                 <Image
-                  className="w-32 h-32 rounded-full mx-auto mb-4"
+                  className="w-32 h-32 rounded-full mx-auto mb-4 object-cover"
                   src={member.src}
                   alt={member.name}
                   width={150}
@@ -439,6 +443,7 @@ export default function Home() {
       </div>
     </div>
     </div>
+    <Foot/>
     
     </div>
    

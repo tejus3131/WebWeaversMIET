@@ -1,4 +1,5 @@
 import React from 'react'
+import Image from 'next/image'
 const Timeline = () => {
   return (
             
@@ -17,7 +18,7 @@ const Timeline = () => {
         <h1 className="text-xl  font-bold">🚪 Welcome and Registration</h1>
         <h2 className='ml-6'>📋  Attendees arrive and register for the event. They receive event materials and are welcomed by the organizers.</h2>
       </div>
-     <img src=''/>
+     <Image alt="" src=''/>
     </div>
     {/* Card 2 */}
     <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-pink-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
@@ -31,7 +32,7 @@ const Timeline = () => {
         <h1 className="text-xl font-bold">🎉 Ceremony</h1>
         <h2 className='ml-6'>        Opening ceremony for the event.</h2>
       </div>
-     <img src=''/>
+     <Image alt="" src=''/>
     </div>
     {/* Card 3 */}
     <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-green-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
@@ -45,7 +46,7 @@ const Timeline = () => {
         <h1 className="text-xl font-bold">📚 Session: Next.js Introduction and Advanced Techniques</h1>
         <h3 className='ml-6'>🚀  Learn advanced techniques and best practices in Next.js development.</h3>
       </div>
-     <img src=''/>
+     <Image alt="" src=''/>
     </div>
     {/* Card 4 */}
     <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-purple-600 text-white rounded mb-10 flex-col md:flex-row space-y-4 md:space-y-0">
@@ -59,7 +60,7 @@ const Timeline = () => {
         <h1 className="text-xl font-bold">🍽️ Lunch</h1>
         <h3 className='ml-6'> Break for lunch.</h3>
       </div>
-     <img src=''/>
+     <Image alt="" src=''/>
     </div>
     {/* Card 5 */}
     <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-yellow-600 text-white rounded mb-10 flex-col md:flex-row">
@@ -73,7 +74,7 @@ const Timeline = () => {
         <h1 className="text-xl font-bold">🧠 Quiz: Next.js Trivia</h1>
         <h3 className='ml-6'>🤔  Test your knowledge on Next.js with a fun quiz.</h3>
       </div>
-     <img src=''/>
+     <Image alt="" src=''/>
     </div>
     <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-blue-700 text-white rounded mb-10 flex-col md:flex-row">
       {/* Dot Follwing the Left Vertical Line */}
@@ -86,7 +87,7 @@ const Timeline = () => {
         <h1 className="text-xl font-bold">💻Deployment Workshop</h1>
         <h3 className='ml-6'>🛠️  Practical workshops on deploying Next.js applications.</h3>
       </div>
-     <img src=''/>
+     <Image alt="" src=''/>
     </div>
     <div className="transform transition cursor-pointer hover:-translate-y-2 ml-10 relative flex items-center px-6 py-4 bg-red-600 text-white rounded mb-10 flex-col md:flex-row">
       {/* Dot Follwing the Left Vertical Line */}
@@ -99,7 +100,7 @@ const Timeline = () => {
         <h1 className="text-xl font-bold">🏆 Award Ceremony</h1>
         <h3 className='ml-6'> Recognizing achievements and distributing awards.</h3>
       </div>
-     <img src=''/>
+     <Image alt="" src=''/>
     </div>
     
   </div>
